@@ -83,7 +83,22 @@
 		CE138D4A2CF94BA600E7FD28 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138D1A2CF94BA600E7FD28 /* Card.swift */; };
 		CE138D4C2CF94C7D00E7FD28 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE138D4B2CF94C7D00E7FD28 /* RealmSwift */; };
 		CE138D502CF94D7A00E7FD28 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE138D4E2CF94D7A00E7FD28 /* Localizable.strings */; };
+		CE138D522CF9FA7200E7FD28 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = CE138D4B2CF94C7D00E7FD28 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE138D532CF9FA7200E7FD28 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE138D522CF9FA7200E7FD28 /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CE138C902CF946E700E7FD28 /* Kometa3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kometa3.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -312,6 +327,7 @@
 				CE138C8C2CF946E700E7FD28 /* Sources */,
 				CE138C8D2CF946E700E7FD28 /* Frameworks */,
 				CE138C8E2CF946E700E7FD28 /* Resources */,
+				CE138D532CF9FA7200E7FD28 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
