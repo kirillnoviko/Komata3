@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="REM-Black.ttf">
+            <string>REM-Black</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Request Finish Submit View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="RequestFinishSubmitViewController" id="Y6W-OH-hqX" customClass="RequestFinishSubmitViewController" customModule="KometaWheel2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GBM-sd-wag">
+                                <rect key="frame" x="0.0" y="59" width="430" height="839"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_background_offset" translatesAutoresizingMaskIntoConstraints="NO" id="A5c-rh-6p1">
+                                        <rect key="frame" x="49.666666666666657" y="248.66666666666669" width="331" height="342.00000000000006"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhe-jF-Cwx">
+                                        <rect key="frame" x="82" y="762" width="266" height="67"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="hhe-jF-Cwx" secondAttribute="height" multiplier="266:67" id="Eyb-Bu-Cyg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="REM-Black" family="REM" pointSize="23"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="ALLOW" backgroundImage="background_button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tappedBack:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="oRe-WT-1LC"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for your request!  We will contact you shortly." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIa-qA-NL5">
+                                        <rect key="frame" x="53.666666666666657" y="130.00000000000003" width="322.66666666666674" height="293.66666666666674"/>
+                                        <fontDescription key="fontDescription" name="REM-Black" family="REM" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hhe-jF-Cwx" firstAttribute="width" secondItem="GBM-sd-wag" secondAttribute="width" multiplier="0.618605" id="3nK-7n-uog"/>
+                                    <constraint firstAttribute="bottom" secondItem="hhe-jF-Cwx" secondAttribute="bottom" constant="10" id="AKA-6s-9Gd"/>
+                                    <constraint firstItem="hhe-jF-Cwx" firstAttribute="centerX" secondItem="GBM-sd-wag" secondAttribute="centerX" id="IMw-qF-RFR"/>
+                                    <constraint firstItem="QIa-qA-NL5" firstAttribute="centerX" secondItem="GBM-sd-wag" secondAttribute="centerX" id="KUd-Pd-31L"/>
+                                    <constraint firstItem="A5c-rh-6p1" firstAttribute="centerX" secondItem="GBM-sd-wag" secondAttribute="centerX" id="NDr-X1-QQu"/>
+                                    <constraint firstItem="QIa-qA-NL5" firstAttribute="width" secondItem="GBM-sd-wag" secondAttribute="width" multiplier="0.75" id="OjO-1V-2rD"/>
+                                    <constraint firstItem="QIa-qA-NL5" firstAttribute="height" secondItem="GBM-sd-wag" secondAttribute="height" multiplier="0.35" id="QPD-R2-MQZ"/>
+                                    <constraint firstItem="A5c-rh-6p1" firstAttribute="centerY" secondItem="GBM-sd-wag" secondAttribute="centerY" id="tZj-fm-22C"/>
+                                    <constraint firstItem="QIa-qA-NL5" firstAttribute="top" secondItem="GBM-sd-wag" secondAttribute="top" constant="130" id="xXN-ig-neq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.041694778449999997" green="0.054121629599999999" blue="0.2353091836" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="GBM-sd-wag" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="0Rj-aq-2XA"/>
+                            <constraint firstAttribute="trailing" secondItem="GBM-sd-wag" secondAttribute="trailing" id="7VJ-vc-cRT"/>
+                            <constraint firstItem="GBM-sd-wag" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="7m4-gX-duD"/>
+                            <constraint firstItem="GBM-sd-wag" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="vjA-cE-kfB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="b" destination="7m4-gX-duD" id="D6W-xV-Gxy"/>
+                        <outlet property="buttonBack" destination="hhe-jF-Cwx" id="z15-T5-BbF"/>
+                        <outlet property="l" destination="0Rj-aq-2XA" id="SwT-Od-K1K"/>
+                        <outlet property="labelTextSucces" destination="QIa-qA-NL5" id="z5w-nc-Isb"/>
+                        <outlet property="r" destination="7VJ-vc-cRT" id="wti-rb-hYO"/>
+                        <outlet property="t" destination="vjA-cE-kfB" id="bf7-cG-MrT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127.48091603053435" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background_button" width="182" height="67"/>
+        <image name="logo_background_offset" width="331" height="342"/>
+    </resources>
+</document>

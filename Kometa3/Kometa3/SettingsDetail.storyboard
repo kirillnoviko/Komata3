@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="REM-Black.ttf">
+            <string>REM-Black</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Settingsdetail View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SettingsDetail" id="Y6W-OH-hqX" customClass="SettingsdetailViewController" customModule="KometaWheel2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4dj-ea-ixM">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_background" translatesAutoresizingMaskIntoConstraints="NO" id="cDO-7d-14O">
+                                        <rect key="frame" x="122" y="0.0" width="131" height="131.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="cDO-7d-14O" secondAttribute="height" multiplier="1:1" id="56o-2H-8n2"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOYALTY CARD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fo6-82-Ewd">
+                                        <rect key="frame" x="56.5" y="131.5" width="262.5" height="27"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3ey-Ai-k2G">
+                                        <rect key="frame" x="17" y="279.5" width="341" height="148"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qP7-An-YPH">
+                                                <rect key="frame" x="0.0" y="0.0" width="341" height="64"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="qP7-An-YPH" secondAttribute="height" multiplier="357:67" id="V8Q-N1-dLS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="REM-Black" family="REM" pointSize="28"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="ALLOW" backgroundImage="background_button">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="changeRussian:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="YpE-ed-qiy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGU-be-EMT">
+                                                <rect key="frame" x="0.0" y="84" width="341" height="64"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="KGU-be-EMT" secondAttribute="height" multiplier="357:67" id="VIg-ed-XAq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="REM-Black" family="REM" pointSize="28"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="ALLOW" backgroundImage="background_button">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="changeEnglish:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="41V-An-6md"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7t-xS-AKV">
+                                        <rect key="frame" x="96.5" y="560" width="182" height="67"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="W7t-xS-AKV" secondAttribute="height" multiplier="182:67" id="196-c4-us4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="REM-Black" family="REM" pointSize="28"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="ALLOW" backgroundImage="background_button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tappedBack:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Y7G-74-5H8"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOYALTY CARD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3U-it-hp6">
+                                        <rect key="frame" x="56.5" y="236.5" width="262.5" height="27"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="W7t-xS-AKV" secondAttribute="bottom" constant="20" id="7oO-mz-JUY"/>
+                                    <constraint firstItem="cDO-7d-14O" firstAttribute="centerX" secondItem="4dj-ea-ixM" secondAttribute="centerX" id="8RN-jH-pdL"/>
+                                    <constraint firstItem="W7t-xS-AKV" firstAttribute="width" secondItem="W7t-xS-AKV" secondAttribute="height" multiplier="182:67" id="E1c-yY-bZM"/>
+                                    <constraint firstItem="B3U-it-hp6" firstAttribute="centerX" secondItem="4dj-ea-ixM" secondAttribute="centerX" id="Jwv-GB-QvZ"/>
+                                    <constraint firstItem="3ey-Ai-k2G" firstAttribute="centerY" secondItem="4dj-ea-ixM" secondAttribute="centerY" constant="30" id="Tsd-v4-IfL"/>
+                                    <constraint firstItem="W7t-xS-AKV" firstAttribute="centerX" secondItem="4dj-ea-ixM" secondAttribute="centerX" id="Y06-bc-bqx"/>
+                                    <constraint firstItem="Fo6-82-Ewd" firstAttribute="centerX" secondItem="4dj-ea-ixM" secondAttribute="centerX" id="aKU-YI-TX9"/>
+                                    <constraint firstItem="Fo6-82-Ewd" firstAttribute="top" secondItem="cDO-7d-14O" secondAttribute="bottom" id="bBT-bs-9gt"/>
+                                    <constraint firstItem="3ey-Ai-k2G" firstAttribute="top" secondItem="B3U-it-hp6" secondAttribute="bottom" constant="16" id="cYr-4W-MOW"/>
+                                    <constraint firstItem="cDO-7d-14O" firstAttribute="top" secondItem="4dj-ea-ixM" secondAttribute="top" id="ein-xA-bHR"/>
+                                    <constraint firstItem="3ey-Ai-k2G" firstAttribute="centerX" secondItem="4dj-ea-ixM" secondAttribute="centerX" id="ffk-gt-Tf1"/>
+                                    <constraint firstItem="B3U-it-hp6" firstAttribute="width" secondItem="4dj-ea-ixM" secondAttribute="width" multiplier="0.7" id="m0P-eH-gfm"/>
+                                    <constraint firstItem="cDO-7d-14O" firstAttribute="width" secondItem="4dj-ea-ixM" secondAttribute="width" multiplier="0.35" id="oMb-mo-8Xq"/>
+                                    <constraint firstItem="Fo6-82-Ewd" firstAttribute="width" secondItem="4dj-ea-ixM" secondAttribute="width" multiplier="0.7" id="uuX-4A-SQX"/>
+                                    <constraint firstItem="3ey-Ai-k2G" firstAttribute="width" secondItem="4dj-ea-ixM" secondAttribute="width" multiplier="0.91" id="vGe-uE-57o"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.041694778449999997" green="0.054121629599999999" blue="0.2353091836" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="4dj-ea-ixM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="QfX-UB-AEN"/>
+                            <constraint firstAttribute="trailing" secondItem="4dj-ea-ixM" secondAttribute="trailing" id="UIs-Jo-tg9"/>
+                            <constraint firstItem="4dj-ea-ixM" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="ZMR-Rz-3pz"/>
+                            <constraint firstItem="4dj-ea-ixM" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="d1K-Ho-JqT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="b" destination="ZMR-Rz-3pz" id="b82-nE-MgL"/>
+                        <outlet property="buttonBack" destination="W7t-xS-AKV" id="L1h-hg-qEP"/>
+                        <outlet property="l" destination="d1K-Ho-JqT" id="Qbe-A7-PCN"/>
+                        <outlet property="labelChangeEnglish" destination="KGU-be-EMT" id="j60-dt-40u"/>
+                        <outlet property="labelChangeRussian" destination="qP7-An-YPH" id="mFU-E3-ehT"/>
+                        <outlet property="labelLanguageChange" destination="B3U-it-hp6" id="HVZ-Y6-8NV"/>
+                        <outlet property="r" destination="UIs-Jo-tg9" id="yQ4-lb-aLx"/>
+                        <outlet property="t" destination="QfX-UB-AEN" id="ijJ-KD-Hqe"/>
+                        <outlet property="titlePage" destination="Fo6-82-Ewd" id="XGA-OO-lSO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127.48091603053435" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background_button" width="182" height="67"/>
+        <image name="logo_background" width="379" height="404"/>
+    </resources>
+</document>

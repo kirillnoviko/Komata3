@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="REM-Black.ttf">
+            <string>REM-Black</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Lose View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LosePages" id="Y6W-OH-hqX" customClass="LoseViewController" customModule="KometaWheel2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c76-2V-C47">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_background" translatesAutoresizingMaskIntoConstraints="NO" id="0TQ-pu-KiE">
+                                        <rect key="frame" x="39.333333333333343" y="222.33333333333334" width="314.33333333333326" height="314.33333333333326"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="0TQ-pu-KiE" secondAttribute="height" multiplier="1:1" id="1ZL-wm-dZX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZ7-3N-Baw">
+                                        <rect key="frame" x="115.33333333333333" y="683" width="162.33333333333337" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="IZ7-3N-Baw" secondAttribute="height" multiplier="182:67" id="8Nc-fV-CKS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="REM-Black" family="REM" pointSize="28"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="ALLOW" backgroundImage="background_button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tappedBack:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Aem-bw-1FV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoP-XL-8he">
+                                        <rect key="frame" x="77.333333333333329" y="607.33333333333337" width="238.33333333333337" height="59.666666666666629"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="qoP-XL-8he" secondAttribute="height" multiplier="267:67" id="eC4-PP-hy2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="REM-Black" family="REM" pointSize="28"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="ALLOW" backgroundImage="background_button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tappedRestart:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ud4-eA-ICN"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU LOSE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKM-EE-Dzp">
+                                        <rect key="frame" x="59" y="38.333333333333329" width="275" height="134"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="KKM-EE-Dzp" firstAttribute="height" secondItem="c76-2V-C47" secondAttribute="height" multiplier="0.176548" id="2Ov-C3-Vbf"/>
+                                    <constraint firstItem="IZ7-3N-Baw" firstAttribute="width" secondItem="c76-2V-C47" secondAttribute="width" multiplier="0.413636" id="5CM-yo-1dA"/>
+                                    <constraint firstItem="0TQ-pu-KiE" firstAttribute="centerX" secondItem="c76-2V-C47" secondAttribute="centerX" id="5KG-8T-KlA"/>
+                                    <constraint firstItem="KKM-EE-Dzp" firstAttribute="width" secondItem="c76-2V-C47" secondAttribute="width" multiplier="0.7" id="5jB-oe-nx6"/>
+                                    <constraint firstItem="IZ7-3N-Baw" firstAttribute="top" secondItem="qoP-XL-8he" secondAttribute="bottom" constant="16" id="7ci-p3-ecY"/>
+                                    <constraint firstItem="KKM-EE-Dzp" firstAttribute="centerX" secondItem="c76-2V-C47" secondAttribute="centerX" id="OXC-d7-Xf2"/>
+                                    <constraint firstItem="0TQ-pu-KiE" firstAttribute="top" secondItem="KKM-EE-Dzp" secondAttribute="bottom" constant="50" id="XSF-9o-l8i"/>
+                                    <constraint firstAttribute="bottom" secondItem="IZ7-3N-Baw" secondAttribute="bottom" constant="16" id="ZSy-xF-vnG"/>
+                                    <constraint firstItem="qoP-XL-8he" firstAttribute="centerX" secondItem="c76-2V-C47" secondAttribute="centerX" id="e0N-bA-m0O"/>
+                                    <constraint firstItem="qoP-XL-8he" firstAttribute="width" secondItem="c76-2V-C47" secondAttribute="width" multiplier="0.606818" id="gRB-sA-255"/>
+                                    <constraint firstItem="IZ7-3N-Baw" firstAttribute="centerX" secondItem="c76-2V-C47" secondAttribute="centerX" id="jQR-3a-x4V"/>
+                                    <constraint firstItem="0TQ-pu-KiE" firstAttribute="width" secondItem="c76-2V-C47" secondAttribute="width" multiplier="0.8" id="jVo-yF-tBj"/>
+                                    <constraint firstItem="0TQ-pu-KiE" firstAttribute="centerY" secondItem="c76-2V-C47" secondAttribute="centerY" id="mg1-0i-ceL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.041694778449999997" green="0.054121629599999999" blue="0.2353091836" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="c76-2V-C47" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="J0A-6d-j4h"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="c76-2V-C47" secondAttribute="bottom" id="RBa-ud-50z"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="c76-2V-C47" secondAttribute="trailing" id="U80-9w-GYf"/>
+                            <constraint firstItem="c76-2V-C47" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fic-S9-IPA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="b" destination="RBa-ud-50z" id="Of5-CP-Pf9"/>
+                        <outlet property="buttonBack" destination="IZ7-3N-Baw" id="vrE-0u-6Jm"/>
+                        <outlet property="buttonRestart" destination="qoP-XL-8he" id="KO0-BP-FKb"/>
+                        <outlet property="l" destination="fic-S9-IPA" id="QZN-d3-Xr4"/>
+                        <outlet property="r" destination="U80-9w-GYf" id="qJc-kj-0GW"/>
+                        <outlet property="t" destination="J0A-6d-j4h" id="eC2-2x-jmI"/>
+                        <outlet property="titlePageWin" destination="KKM-EE-Dzp" id="ugz-3G-2GK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127.48091603053435" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background_button" width="182" height="67"/>
+        <image name="logo_background" width="379" height="404"/>
+    </resources>
+</document>

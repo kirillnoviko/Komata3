@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE138CB72CF94AEF00E7FD28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CAD2CF94AEF00E7FD28 /* AppDelegate.swift */; };
+		CE138CB82CF94AEF00E7FD28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CB42CF94AEF00E7FD28 /* SceneDelegate.swift */; };
+		CE138CB92CF94AEF00E7FD28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CB52CF94AEF00E7FD28 /* ViewController.swift */; };
+		CE138CBA2CF94AEF00E7FD28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE138CAE2CF94AEF00E7FD28 /* Assets.xcassets */; };
+		CE138CBC2CF94AEF00E7FD28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CB12CF94AEF00E7FD28 /* LaunchScreen.storyboard */; };
+		CE138CD12CF94B3D00E7FD28 /* OnboardingPrivacy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CC72CF94B3D00E7FD28 /* OnboardingPrivacy.storyboard */; };
+		CE138CD22CF94B3D00E7FD28 /* SettingsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CCD2CF94B3D00E7FD28 /* SettingsDetail.storyboard */; };
+		CE138CD32CF94B3D00E7FD28 /* LosePages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CC22CF94B3D00E7FD28 /* LosePages.storyboard */; };
+		CE138CD42CF94B3D00E7FD28 /* AbouteUsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CBF2CF94B3D00E7FD28 /* AbouteUsDetail.storyboard */; };
+		CE138CD52CF94B3D00E7FD28 /* RequestSubmit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CCB2CF94B3D00E7FD28 /* RequestSubmit.storyboard */; };
+		CE138CD62CF94B3D00E7FD28 /* RequestSelectService.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CCA2CF94B3D00E7FD28 /* RequestSelectService.storyboard */; };
+		CE138CD72CF94B3D00E7FD28 /* LoyaltyCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CC32CF94B3D00E7FD28 /* LoyaltyCard.storyboard */; };
+		CE138CD82CF94B3D00E7FD28 /* WinPages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CD02CF94B3D00E7FD28 /* WinPages.storyboard */; };
+		CE138CD92CF94B3D00E7FD28 /* QRCodePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CC82CF94B3D00E7FD28 /* QRCodePage.storyboard */; };
+		CE138CDA2CF94B3D00E7FD28 /* SettingsReviewsLeave.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CCF2CF94B3D00E7FD28 /* SettingsReviewsLeave.storyboard */; };
+		CE138CDB2CF94B3D00E7FD28 /* LeaveARequest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CC12CF94B3D00E7FD28 /* LeaveARequest.storyboard */; };
+		CE138CDC2CF94B3D00E7FD28 /* MainWindow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CC42CF94B3D00E7FD28 /* MainWindow.storyboard */; };
+		CE138CDD2CF94B3D00E7FD28 /* MiniGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CC52CF94B3D00E7FD28 /* MiniGame.storyboard */; };
+		CE138CDE2CF94B3D00E7FD28 /* MyRequests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CC62CF94B3D00E7FD28 /* MyRequests.storyboard */; };
+		CE138CDF2CF94B3D00E7FD28 /* RequestFinishSubmit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CC92CF94B3D00E7FD28 /* RequestFinishSubmit.storyboard */; };
+		CE138CE02CF94B3D00E7FD28 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CCC2CF94B3D00E7FD28 /* Settings.storyboard */; };
+		CE138CE12CF94B3D00E7FD28 /* SettingsReviews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CCE2CF94B3D00E7FD28 /* SettingsReviews.storyboard */; };
+		CE138CE22CF94B3D00E7FD28 /* AbouteUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CBE2CF94B3D00E7FD28 /* AbouteUs.storyboard */; };
+		CE138CE32CF94B3D00E7FD28 /* GalleryPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CC02CF94B3D00E7FD28 /* GalleryPage.storyboard */; };
+		CE138CE82CF94B5800E7FD28 /* FeedbackCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CE62CF94B5800E7FD28 /* FeedbackCollectionViewCell.swift */; };
+		CE138CE92CF94B5800E7FD28 /* CellMainButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CE52CF94B5800E7FD28 /* CellMainButtom.swift */; };
+		CE138CEA2CF94B5800E7FD28 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CE42CF94B5800E7FD28 /* CardCollectionViewCell.swift */; };
+		CE138CEB2CF94B5800E7FD28 /* MyRequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CE72CF94B5800E7FD28 /* MyRequestCell.swift */; };
+		CE138CEE2CF94B6C00E7FD28 /* CellMyRequest.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE138CED2CF94B6C00E7FD28 /* CellMyRequest.xib */; };
+		CE138CEF2CF94B6C00E7FD28 /* CellMainButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE138CEC2CF94B6C00E7FD28 /* CellMainButton.xib */; };
+		CE138D052CF94B8A00E7FD28 /* RequestMyNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CFC2CF94B8A00E7FD28 /* RequestMyNotesViewController.swift */; };
+		CE138D062CF94B8A00E7FD28 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138D022CF94B8A00E7FD28 /* SettingsViewController.swift */; };
+		CE138D072CF94B8A00E7FD28 /* SettingsReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138D012CF94B8A00E7FD28 /* SettingsReviewsViewController.swift */; };
+		CE138D082CF94B8A00E7FD28 /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138D042CF94B8A00E7FD28 /* WinViewController.swift */; };
+		CE138D092CF94B8A00E7FD28 /* RequestFinishSubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CFB2CF94B8A00E7FD28 /* RequestFinishSubmitViewController.swift */; };
+		CE138D0A2CF94B8A00E7FD28 /* BaseViewControllerMainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CF22CF94B8A00E7FD28 /* BaseViewControllerMainButton.swift */; };
+		CE138D0B2CF94B8A00E7FD28 /* GalleryPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CF32CF94B8A00E7FD28 /* GalleryPageViewController.swift */; };
+		CE138D0C2CF94B8A00E7FD28 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138D032CF94B8A00E7FD28 /* SplashViewController.swift */; };
+		CE138D0D2CF94B8A00E7FD28 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CF92CF94B8A00E7FD28 /* OnboardingViewController.swift */; };
+		CE138D0E2CF94B8A00E7FD28 /* RequestSubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CFE2CF94B8A00E7FD28 /* RequestSubmitViewController.swift */; };
+		CE138D0F2CF94B8A00E7FD28 /* LoyaltyCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CF62CF94B8A00E7FD28 /* LoyaltyCardViewController.swift */; };
+		CE138D102CF94B8A00E7FD28 /* MiniGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CF82CF94B8A00E7FD28 /* MiniGameViewController.swift */; };
+		CE138D112CF94B8A00E7FD28 /* LeaveARequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CF42CF94B8A00E7FD28 /* LeaveARequestViewController.swift */; };
+		CE138D122CF94B8A00E7FD28 /* AbouteUsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CF02CF94B8A00E7FD28 /* AbouteUsDetailViewController.swift */; };
+		CE138D132CF94B8A00E7FD28 /* AbouteUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CF12CF94B8A00E7FD28 /* AbouteUsViewController.swift */; };
+		CE138D142CF94B8A00E7FD28 /* LoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CF52CF94B8A00E7FD28 /* LoseViewController.swift */; };
+		CE138D152CF94B8A00E7FD28 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CF72CF94B8A00E7FD28 /* MainViewController.swift */; };
+		CE138D162CF94B8A00E7FD28 /* RequestSelectServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CFD2CF94B8A00E7FD28 /* RequestSelectServiceViewController.swift */; };
+		CE138D172CF94B8A00E7FD28 /* QRCodePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CFA2CF94B8A00E7FD28 /* QRCodePageViewController.swift */; };
+		CE138D182CF94B8A00E7FD28 /* SettingsdetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138CFF2CF94B8A00E7FD28 /* SettingsdetailViewController.swift */; };
+		CE138D192CF94B8A00E7FD28 /* SettingsReviewsLeaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138D002CF94B8A00E7FD28 /* SettingsReviewsLeaveViewController.swift */; };
+		CE138D342CF94BA600E7FD28 /* REM-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE138D292CF94BA600E7FD28 /* REM-Thin.ttf */; };
+		CE138D352CF94BA600E7FD28 /* Comfortaa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE138D1F2CF94BA600E7FD28 /* Comfortaa-SemiBold.ttf */; };
+		CE138D362CF94BA600E7FD28 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE138D1B2CF94BA600E7FD28 /* Comfortaa-Bold.ttf */; };
+		CE138D372CF94BA600E7FD28 /* Comfortaa-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE138D1D2CF94BA600E7FD28 /* Comfortaa-Medium.ttf */; };
+		CE138D382CF94BA600E7FD28 /* REM-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE138D272CF94BA600E7FD28 /* REM-Regular.ttf */; };
+		CE138D392CF94BA600E7FD28 /* REM-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE138D212CF94BA600E7FD28 /* REM-Black.ttf */; };
+		CE138D3A2CF94BA600E7FD28 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE138D1C2CF94BA600E7FD28 /* Comfortaa-Light.ttf */; };
+		CE138D3B2CF94BA600E7FD28 /* REM-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE138D222CF94BA600E7FD28 /* REM-Bold.ttf */; };
+		CE138D3C2CF94BA600E7FD28 /* REM-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE138D232CF94BA600E7FD28 /* REM-ExtraBold.ttf */; };
+		CE138D3D2CF94BA600E7FD28 /* REM-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE138D282CF94BA600E7FD28 /* REM-SemiBold.ttf */; };
+		CE138D3E2CF94BA600E7FD28 /* REM-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE138D252CF94BA600E7FD28 /* REM-Light.ttf */; };
+		CE138D3F2CF94BA600E7FD28 /* REM-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE138D242CF94BA600E7FD28 /* REM-ExtraLight.ttf */; };
+		CE138D402CF94BA600E7FD28 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE138D1E2CF94BA600E7FD28 /* Comfortaa-Regular.ttf */; };
+		CE138D412CF94BA600E7FD28 /* REM-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE138D262CF94BA600E7FD28 /* REM-Medium.ttf */; };
+		CE138D422CF94BA600E7FD28 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138D322CF94BA600E7FD28 /* Order.swift */; };
+		CE138D432CF94BA600E7FD28 /* GradientBackgroundHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138D2C2CF94BA600E7FD28 /* GradientBackgroundHelper.swift */; };
+		CE138D442CF94BA600E7FD28 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138D332CF94BA600E7FD28 /* UIColor.swift */; };
+		CE138D452CF94BA600E7FD28 /* GradientButtonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138D2D2CF94BA600E7FD28 /* GradientButtonHelper.swift */; };
+		CE138D462CF94BA600E7FD28 /* GradientTextHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138D2E2CF94BA600E7FD28 /* GradientTextHelper.swift */; };
+		CE138D472CF94BA600E7FD28 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138D2F2CF94BA600E7FD28 /* LanguageManager.swift */; };
+		CE138D482CF94BA600E7FD28 /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138D312CF94BA600E7FD28 /* OnboardingManager.swift */; };
+		CE138D492CF94BA600E7FD28 /* NotificationNameExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138D302CF94BA600E7FD28 /* NotificationNameExtensions.swift */; };
+		CE138D4A2CF94BA600E7FD28 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138D1A2CF94BA600E7FD28 /* Card.swift */; };
+		CE138D4C2CF94C7D00E7FD28 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE138D4B2CF94C7D00E7FD28 /* RealmSwift */; };
+		CE138D502CF94D7A00E7FD28 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE138D4E2CF94D7A00E7FD28 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE138C902CF946E700E7FD28 /* Kometa3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kometa3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE138CAD2CF94AEF00E7FD28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE138CAE2CF94AEF00E7FD28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE138CAF2CF94AEF00E7FD28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE138CB02CF94AEF00E7FD28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE138CB42CF94AEF00E7FD28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE138CB52CF94AEF00E7FD28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE138CBE2CF94B3D00E7FD28 /* AbouteUs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AbouteUs.storyboard; sourceTree = "<group>"; };
+		CE138CBF2CF94B3D00E7FD28 /* AbouteUsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AbouteUsDetail.storyboard; sourceTree = "<group>"; };
+		CE138CC02CF94B3D00E7FD28 /* GalleryPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GalleryPage.storyboard; sourceTree = "<group>"; };
+		CE138CC12CF94B3D00E7FD28 /* LeaveARequest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LeaveARequest.storyboard; sourceTree = "<group>"; };
+		CE138CC22CF94B3D00E7FD28 /* LosePages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LosePages.storyboard; sourceTree = "<group>"; };
+		CE138CC32CF94B3D00E7FD28 /* LoyaltyCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoyaltyCard.storyboard; sourceTree = "<group>"; };
+		CE138CC42CF94B3D00E7FD28 /* MainWindow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainWindow.storyboard; sourceTree = "<group>"; };
+		CE138CC52CF94B3D00E7FD28 /* MiniGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MiniGame.storyboard; sourceTree = "<group>"; };
+		CE138CC62CF94B3D00E7FD28 /* MyRequests.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyRequests.storyboard; sourceTree = "<group>"; };
+		CE138CC72CF94B3D00E7FD28 /* OnboardingPrivacy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnboardingPrivacy.storyboard; sourceTree = "<group>"; };
+		CE138CC82CF94B3D00E7FD28 /* QRCodePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRCodePage.storyboard; sourceTree = "<group>"; };
+		CE138CC92CF94B3D00E7FD28 /* RequestFinishSubmit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RequestFinishSubmit.storyboard; sourceTree = "<group>"; };
+		CE138CCA2CF94B3D00E7FD28 /* RequestSelectService.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RequestSelectService.storyboard; sourceTree = "<group>"; };
+		CE138CCB2CF94B3D00E7FD28 /* RequestSubmit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RequestSubmit.storyboard; sourceTree = "<group>"; };
+		CE138CCC2CF94B3D00E7FD28 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		CE138CCD2CF94B3D00E7FD28 /* SettingsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsDetail.storyboard; sourceTree = "<group>"; };
+		CE138CCE2CF94B3D00E7FD28 /* SettingsReviews.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsReviews.storyboard; sourceTree = "<group>"; };
+		CE138CCF2CF94B3D00E7FD28 /* SettingsReviewsLeave.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsReviewsLeave.storyboard; sourceTree = "<group>"; };
+		CE138CD02CF94B3D00E7FD28 /* WinPages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WinPages.storyboard; sourceTree = "<group>"; };
+		CE138CE42CF94B5800E7FD28 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE138CE52CF94B5800E7FD28 /* CellMainButtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellMainButtom.swift; sourceTree = "<group>"; };
+		CE138CE62CF94B5800E7FD28 /* FeedbackCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE138CE72CF94B5800E7FD28 /* MyRequestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRequestCell.swift; sourceTree = "<group>"; };
+		CE138CEC2CF94B6C00E7FD28 /* CellMainButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellMainButton.xib; sourceTree = "<group>"; };
+		CE138CED2CF94B6C00E7FD28 /* CellMyRequest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellMyRequest.xib; sourceTree = "<group>"; };
+		CE138CF02CF94B8A00E7FD28 /* AbouteUsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbouteUsDetailViewController.swift; sourceTree = "<group>"; };
+		CE138CF12CF94B8A00E7FD28 /* AbouteUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbouteUsViewController.swift; sourceTree = "<group>"; };
+		CE138CF22CF94B8A00E7FD28 /* BaseViewControllerMainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerMainButton.swift; sourceTree = "<group>"; };
+		CE138CF32CF94B8A00E7FD28 /* GalleryPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPageViewController.swift; sourceTree = "<group>"; };
+		CE138CF42CF94B8A00E7FD28 /* LeaveARequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveARequestViewController.swift; sourceTree = "<group>"; };
+		CE138CF52CF94B8A00E7FD28 /* LoseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseViewController.swift; sourceTree = "<group>"; };
+		CE138CF62CF94B8A00E7FD28 /* LoyaltyCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoyaltyCardViewController.swift; sourceTree = "<group>"; };
+		CE138CF72CF94B8A00E7FD28 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CE138CF82CF94B8A00E7FD28 /* MiniGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameViewController.swift; sourceTree = "<group>"; };
+		CE138CF92CF94B8A00E7FD28 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		CE138CFA2CF94B8A00E7FD28 /* QRCodePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodePageViewController.swift; sourceTree = "<group>"; };
+		CE138CFB2CF94B8A00E7FD28 /* RequestFinishSubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFinishSubmitViewController.swift; sourceTree = "<group>"; };
+		CE138CFC2CF94B8A00E7FD28 /* RequestMyNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMyNotesViewController.swift; sourceTree = "<group>"; };
+		CE138CFD2CF94B8A00E7FD28 /* RequestSelectServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSelectServiceViewController.swift; sourceTree = "<group>"; };
+		CE138CFE2CF94B8A00E7FD28 /* RequestSubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSubmitViewController.swift; sourceTree = "<group>"; };
+		CE138CFF2CF94B8A00E7FD28 /* SettingsdetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsdetailViewController.swift; sourceTree = "<group>"; };
+		CE138D002CF94B8A00E7FD28 /* SettingsReviewsLeaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsReviewsLeaveViewController.swift; sourceTree = "<group>"; };
+		CE138D012CF94B8A00E7FD28 /* SettingsReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsReviewsViewController.swift; sourceTree = "<group>"; };
+		CE138D022CF94B8A00E7FD28 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CE138D032CF94B8A00E7FD28 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		CE138D042CF94B8A00E7FD28 /* WinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
+		CE138D1A2CF94BA600E7FD28 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		CE138D1B2CF94BA600E7FD28 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		CE138D1C2CF94BA600E7FD28 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
+		CE138D1D2CF94BA600E7FD28 /* Comfortaa-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Medium.ttf"; sourceTree = "<group>"; };
+		CE138D1E2CF94BA600E7FD28 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
+		CE138D1F2CF94BA600E7FD28 /* Comfortaa-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-SemiBold.ttf"; sourceTree = "<group>"; };
+		CE138D212CF94BA600E7FD28 /* REM-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "REM-Black.ttf"; sourceTree = "<group>"; };
+		CE138D222CF94BA600E7FD28 /* REM-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "REM-Bold.ttf"; sourceTree = "<group>"; };
+		CE138D232CF94BA600E7FD28 /* REM-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "REM-ExtraBold.ttf"; sourceTree = "<group>"; };
+		CE138D242CF94BA600E7FD28 /* REM-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "REM-ExtraLight.ttf"; sourceTree = "<group>"; };
+		CE138D252CF94BA600E7FD28 /* REM-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "REM-Light.ttf"; sourceTree = "<group>"; };
+		CE138D262CF94BA600E7FD28 /* REM-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "REM-Medium.ttf"; sourceTree = "<group>"; };
+		CE138D272CF94BA600E7FD28 /* REM-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "REM-Regular.ttf"; sourceTree = "<group>"; };
+		CE138D282CF94BA600E7FD28 /* REM-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "REM-SemiBold.ttf"; sourceTree = "<group>"; };
+		CE138D292CF94BA600E7FD28 /* REM-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "REM-Thin.ttf"; sourceTree = "<group>"; };
+		CE138D2C2CF94BA600E7FD28 /* GradientBackgroundHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackgroundHelper.swift; sourceTree = "<group>"; };
+		CE138D2D2CF94BA600E7FD28 /* GradientButtonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonHelper.swift; sourceTree = "<group>"; };
+		CE138D2E2CF94BA600E7FD28 /* GradientTextHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientTextHelper.swift; sourceTree = "<group>"; };
+		CE138D2F2CF94BA600E7FD28 /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
+		CE138D302CF94BA600E7FD28 /* NotificationNameExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtensions.swift; sourceTree = "<group>"; };
+		CE138D312CF94BA600E7FD28 /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
+		CE138D322CF94BA600E7FD28 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		CE138D332CF94BA600E7FD28 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		CE138D4D2CF94D6C00E7FD28 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		CE138D4F2CF94D7A00E7FD28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE138D512CF94D8000E7FD28 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE138C8D2CF946E700E7FD28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE138D4C2CF94C7D00E7FD28 /* RealmSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE138C872CF946E700E7FD28 = {
+			isa = PBXGroup;
+			children = (
+				CE138CB62CF94AEF00E7FD28 /* Kometa3 */,
+				CE138C912CF946E700E7FD28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE138C912CF946E700E7FD28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE138C902CF946E700E7FD28 /* Kometa3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE138CB62CF94AEF00E7FD28 /* Kometa3 */ = {
+			isa = PBXGroup;
+			children = (
+				CE138D1A2CF94BA600E7FD28 /* Card.swift */,
+				CE138D2B2CF94BA600E7FD28 /* Fonts */,
+				CE138D2C2CF94BA600E7FD28 /* GradientBackgroundHelper.swift */,
+				CE138D2D2CF94BA600E7FD28 /* GradientButtonHelper.swift */,
+				CE138D2E2CF94BA600E7FD28 /* GradientTextHelper.swift */,
+				CE138D2F2CF94BA600E7FD28 /* LanguageManager.swift */,
+				CE138D302CF94BA600E7FD28 /* NotificationNameExtensions.swift */,
+				CE138D312CF94BA600E7FD28 /* OnboardingManager.swift */,
+				CE138D322CF94BA600E7FD28 /* Order.swift */,
+				CE138D332CF94BA600E7FD28 /* UIColor.swift */,
+				CE138CF02CF94B8A00E7FD28 /* AbouteUsDetailViewController.swift */,
+				CE138CF12CF94B8A00E7FD28 /* AbouteUsViewController.swift */,
+				CE138CF22CF94B8A00E7FD28 /* BaseViewControllerMainButton.swift */,
+				CE138CF32CF94B8A00E7FD28 /* GalleryPageViewController.swift */,
+				CE138CF42CF94B8A00E7FD28 /* LeaveARequestViewController.swift */,
+				CE138CF52CF94B8A00E7FD28 /* LoseViewController.swift */,
+				CE138CF62CF94B8A00E7FD28 /* LoyaltyCardViewController.swift */,
+				CE138CF72CF94B8A00E7FD28 /* MainViewController.swift */,
+				CE138CF82CF94B8A00E7FD28 /* MiniGameViewController.swift */,
+				CE138CF92CF94B8A00E7FD28 /* OnboardingViewController.swift */,
+				CE138CFA2CF94B8A00E7FD28 /* QRCodePageViewController.swift */,
+				CE138CFB2CF94B8A00E7FD28 /* RequestFinishSubmitViewController.swift */,
+				CE138CFC2CF94B8A00E7FD28 /* RequestMyNotesViewController.swift */,
+				CE138CFD2CF94B8A00E7FD28 /* RequestSelectServiceViewController.swift */,
+				CE138CFE2CF94B8A00E7FD28 /* RequestSubmitViewController.swift */,
+				CE138CFF2CF94B8A00E7FD28 /* SettingsdetailViewController.swift */,
+				CE138D002CF94B8A00E7FD28 /* SettingsReviewsLeaveViewController.swift */,
+				CE138D012CF94B8A00E7FD28 /* SettingsReviewsViewController.swift */,
+				CE138D022CF94B8A00E7FD28 /* SettingsViewController.swift */,
+				CE138D032CF94B8A00E7FD28 /* SplashViewController.swift */,
+				CE138D042CF94B8A00E7FD28 /* WinViewController.swift */,
+				CE138CEC2CF94B6C00E7FD28 /* CellMainButton.xib */,
+				CE138CED2CF94B6C00E7FD28 /* CellMyRequest.xib */,
+				CE138CE42CF94B5800E7FD28 /* CardCollectionViewCell.swift */,
+				CE138CE52CF94B5800E7FD28 /* CellMainButtom.swift */,
+				CE138CE62CF94B5800E7FD28 /* FeedbackCollectionViewCell.swift */,
+				CE138CE72CF94B5800E7FD28 /* MyRequestCell.swift */,
+				CE138CBE2CF94B3D00E7FD28 /* AbouteUs.storyboard */,
+				CE138CBF2CF94B3D00E7FD28 /* AbouteUsDetail.storyboard */,
+				CE138CC02CF94B3D00E7FD28 /* GalleryPage.storyboard */,
+				CE138CC12CF94B3D00E7FD28 /* LeaveARequest.storyboard */,
+				CE138CC22CF94B3D00E7FD28 /* LosePages.storyboard */,
+				CE138CC32CF94B3D00E7FD28 /* LoyaltyCard.storyboard */,
+				CE138CC42CF94B3D00E7FD28 /* MainWindow.storyboard */,
+				CE138CC52CF94B3D00E7FD28 /* MiniGame.storyboard */,
+				CE138CC62CF94B3D00E7FD28 /* MyRequests.storyboard */,
+				CE138CC72CF94B3D00E7FD28 /* OnboardingPrivacy.storyboard */,
+				CE138CC82CF94B3D00E7FD28 /* QRCodePage.storyboard */,
+				CE138CC92CF94B3D00E7FD28 /* RequestFinishSubmit.storyboard */,
+				CE138CCA2CF94B3D00E7FD28 /* RequestSelectService.storyboard */,
+				CE138CCB2CF94B3D00E7FD28 /* RequestSubmit.storyboard */,
+				CE138CCC2CF94B3D00E7FD28 /* Settings.storyboard */,
+				CE138CCD2CF94B3D00E7FD28 /* SettingsDetail.storyboard */,
+				CE138CCE2CF94B3D00E7FD28 /* SettingsReviews.storyboard */,
+				CE138CCF2CF94B3D00E7FD28 /* SettingsReviewsLeave.storyboard */,
+				CE138CD02CF94B3D00E7FD28 /* WinPages.storyboard */,
+				CE138CAD2CF94AEF00E7FD28 /* AppDelegate.swift */,
+				CE138CAE2CF94AEF00E7FD28 /* Assets.xcassets */,
+				CE138CAF2CF94AEF00E7FD28 /* Info.plist */,
+				CE138CB12CF94AEF00E7FD28 /* LaunchScreen.storyboard */,
+				CE138CB42CF94AEF00E7FD28 /* SceneDelegate.swift */,
+				CE138CB52CF94AEF00E7FD28 /* ViewController.swift */,
+				CE138D4E2CF94D7A00E7FD28 /* Localizable.strings */,
+			);
+			path = Kometa3;
+			sourceTree = "<group>";
+		};
+		CE138D202CF94BA600E7FD28 /* Comfortaa */ = {
+			isa = PBXGroup;
+			children = (
+				CE138D1B2CF94BA600E7FD28 /* Comfortaa-Bold.ttf */,
+				CE138D1C2CF94BA600E7FD28 /* Comfortaa-Light.ttf */,
+				CE138D1D2CF94BA600E7FD28 /* Comfortaa-Medium.ttf */,
+				CE138D1E2CF94BA600E7FD28 /* Comfortaa-Regular.ttf */,
+				CE138D1F2CF94BA600E7FD28 /* Comfortaa-SemiBold.ttf */,
+			);
+			path = Comfortaa;
+			sourceTree = "<group>";
+		};
+		CE138D2A2CF94BA600E7FD28 /* REM */ = {
+			isa = PBXGroup;
+			children = (
+				CE138D212CF94BA600E7FD28 /* REM-Black.ttf */,
+				CE138D222CF94BA600E7FD28 /* REM-Bold.ttf */,
+				CE138D232CF94BA600E7FD28 /* REM-ExtraBold.ttf */,
+				CE138D242CF94BA600E7FD28 /* REM-ExtraLight.ttf */,
+				CE138D252CF94BA600E7FD28 /* REM-Light.ttf */,
+				CE138D262CF94BA600E7FD28 /* REM-Medium.ttf */,
+				CE138D272CF94BA600E7FD28 /* REM-Regular.ttf */,
+				CE138D282CF94BA600E7FD28 /* REM-SemiBold.ttf */,
+				CE138D292CF94BA600E7FD28 /* REM-Thin.ttf */,
+			);
+			path = REM;
+			sourceTree = "<group>";
+		};
+		CE138D2B2CF94BA600E7FD28 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CE138D202CF94BA600E7FD28 /* Comfortaa */,
+				CE138D2A2CF94BA600E7FD28 /* REM */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE138C8F2CF946E700E7FD28 /* Kometa3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE138CA32CF946E900E7FD28 /* Build configuration list for PBXNativeTarget "Kometa3" */;
+			buildPhases = (
+				CE138C8C2CF946E700E7FD28 /* Sources */,
+				CE138C8D2CF946E700E7FD28 /* Frameworks */,
+				CE138C8E2CF946E700E7FD28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kometa3;
+			packageProductDependencies = (
+				CE138D4B2CF94C7D00E7FD28 /* RealmSwift */,
+			);
+			productName = Kometa3;
+			productReference = CE138C902CF946E700E7FD28 /* Kometa3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE138C882CF946E700E7FD28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					CE138C8F2CF946E700E7FD28 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = CE138C8B2CF946E700E7FD28 /* Build configuration list for PBXProject "Kometa3" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = CE138C872CF946E700E7FD28;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CE138CA82CF9475300E7FD28 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CE138C912CF946E700E7FD28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE138C8F2CF946E700E7FD28 /* Kometa3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE138C8E2CF946E700E7FD28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE138CBA2CF94AEF00E7FD28 /* Assets.xcassets in Resources */,
+				CE138CEE2CF94B6C00E7FD28 /* CellMyRequest.xib in Resources */,
+				CE138CEF2CF94B6C00E7FD28 /* CellMainButton.xib in Resources */,
+				CE138CD12CF94B3D00E7FD28 /* OnboardingPrivacy.storyboard in Resources */,
+				CE138CD22CF94B3D00E7FD28 /* SettingsDetail.storyboard in Resources */,
+				CE138CD32CF94B3D00E7FD28 /* LosePages.storyboard in Resources */,
+				CE138CD42CF94B3D00E7FD28 /* AbouteUsDetail.storyboard in Resources */,
+				CE138CD52CF94B3D00E7FD28 /* RequestSubmit.storyboard in Resources */,
+				CE138CD62CF94B3D00E7FD28 /* RequestSelectService.storyboard in Resources */,
+				CE138CD72CF94B3D00E7FD28 /* LoyaltyCard.storyboard in Resources */,
+				CE138CD82CF94B3D00E7FD28 /* WinPages.storyboard in Resources */,
+				CE138CD92CF94B3D00E7FD28 /* QRCodePage.storyboard in Resources */,
+				CE138CDA2CF94B3D00E7FD28 /* SettingsReviewsLeave.storyboard in Resources */,
+				CE138CDB2CF94B3D00E7FD28 /* LeaveARequest.storyboard in Resources */,
+				CE138CDC2CF94B3D00E7FD28 /* MainWindow.storyboard in Resources */,
+				CE138CDD2CF94B3D00E7FD28 /* MiniGame.storyboard in Resources */,
+				CE138CDE2CF94B3D00E7FD28 /* MyRequests.storyboard in Resources */,
+				CE138CDF2CF94B3D00E7FD28 /* RequestFinishSubmit.storyboard in Resources */,
+				CE138CE02CF94B3D00E7FD28 /* Settings.storyboard in Resources */,
+				CE138CE12CF94B3D00E7FD28 /* SettingsReviews.storyboard in Resources */,
+				CE138CE22CF94B3D00E7FD28 /* AbouteUs.storyboard in Resources */,
+				CE138CE32CF94B3D00E7FD28 /* GalleryPage.storyboard in Resources */,
+				CE138D342CF94BA600E7FD28 /* REM-Thin.ttf in Resources */,
+				CE138D352CF94BA600E7FD28 /* Comfortaa-SemiBold.ttf in Resources */,
+				CE138D362CF94BA600E7FD28 /* Comfortaa-Bold.ttf in Resources */,
+				CE138D372CF94BA600E7FD28 /* Comfortaa-Medium.ttf in Resources */,
+				CE138D382CF94BA600E7FD28 /* REM-Regular.ttf in Resources */,
+				CE138D392CF94BA600E7FD28 /* REM-Black.ttf in Resources */,
+				CE138D3A2CF94BA600E7FD28 /* Comfortaa-Light.ttf in Resources */,
+				CE138D3B2CF94BA600E7FD28 /* REM-Bold.ttf in Resources */,
+				CE138D3C2CF94BA600E7FD28 /* REM-ExtraBold.ttf in Resources */,
+				CE138D3D2CF94BA600E7FD28 /* REM-SemiBold.ttf in Resources */,
+				CE138D3E2CF94BA600E7FD28 /* REM-Light.ttf in Resources */,
+				CE138D3F2CF94BA600E7FD28 /* REM-ExtraLight.ttf in Resources */,
+				CE138D402CF94BA600E7FD28 /* Comfortaa-Regular.ttf in Resources */,
+				CE138D502CF94D7A00E7FD28 /* Localizable.strings in Resources */,
+				CE138D412CF94BA600E7FD28 /* REM-Medium.ttf in Resources */,
+				CE138CBC2CF94AEF00E7FD28 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE138C8C2CF946E700E7FD28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE138CB72CF94AEF00E7FD28 /* AppDelegate.swift in Sources */,
+				CE138D052CF94B8A00E7FD28 /* RequestMyNotesViewController.swift in Sources */,
+				CE138D062CF94B8A00E7FD28 /* SettingsViewController.swift in Sources */,
+				CE138D072CF94B8A00E7FD28 /* SettingsReviewsViewController.swift in Sources */,
+				CE138D082CF94B8A00E7FD28 /* WinViewController.swift in Sources */,
+				CE138D092CF94B8A00E7FD28 /* RequestFinishSubmitViewController.swift in Sources */,
+				CE138D0A2CF94B8A00E7FD28 /* BaseViewControllerMainButton.swift in Sources */,
+				CE138D0B2CF94B8A00E7FD28 /* GalleryPageViewController.swift in Sources */,
+				CE138D0C2CF94B8A00E7FD28 /* SplashViewController.swift in Sources */,
+				CE138D0D2CF94B8A00E7FD28 /* OnboardingViewController.swift in Sources */,
+				CE138D0E2CF94B8A00E7FD28 /* RequestSubmitViewController.swift in Sources */,
+				CE138D0F2CF94B8A00E7FD28 /* LoyaltyCardViewController.swift in Sources */,
+				CE138D102CF94B8A00E7FD28 /* MiniGameViewController.swift in Sources */,
+				CE138D112CF94B8A00E7FD28 /* LeaveARequestViewController.swift in Sources */,
+				CE138D122CF94B8A00E7FD28 /* AbouteUsDetailViewController.swift in Sources */,
+				CE138D422CF94BA600E7FD28 /* Order.swift in Sources */,
+				CE138D432CF94BA600E7FD28 /* GradientBackgroundHelper.swift in Sources */,
+				CE138D442CF94BA600E7FD28 /* UIColor.swift in Sources */,
+				CE138D452CF94BA600E7FD28 /* GradientButtonHelper.swift in Sources */,
+				CE138D462CF94BA600E7FD28 /* GradientTextHelper.swift in Sources */,
+				CE138D472CF94BA600E7FD28 /* LanguageManager.swift in Sources */,
+				CE138D482CF94BA600E7FD28 /* OnboardingManager.swift in Sources */,
+				CE138D492CF94BA600E7FD28 /* NotificationNameExtensions.swift in Sources */,
+				CE138D4A2CF94BA600E7FD28 /* Card.swift in Sources */,
+				CE138D132CF94B8A00E7FD28 /* AbouteUsViewController.swift in Sources */,
+				CE138D142CF94B8A00E7FD28 /* LoseViewController.swift in Sources */,
+				CE138D152CF94B8A00E7FD28 /* MainViewController.swift in Sources */,
+				CE138D162CF94B8A00E7FD28 /* RequestSelectServiceViewController.swift in Sources */,
+				CE138D172CF94B8A00E7FD28 /* QRCodePageViewController.swift in Sources */,
+				CE138D182CF94B8A00E7FD28 /* SettingsdetailViewController.swift in Sources */,
+				CE138D192CF94B8A00E7FD28 /* SettingsReviewsLeaveViewController.swift in Sources */,
+				CE138CB82CF94AEF00E7FD28 /* SceneDelegate.swift in Sources */,
+				CE138CE82CF94B5800E7FD28 /* FeedbackCollectionViewCell.swift in Sources */,
+				CE138CE92CF94B5800E7FD28 /* CellMainButtom.swift in Sources */,
+				CE138CEA2CF94B5800E7FD28 /* CardCollectionViewCell.swift in Sources */,
+				CE138CEB2CF94B5800E7FD28 /* MyRequestCell.swift in Sources */,
+				CE138CB92CF94AEF00E7FD28 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE138CB12CF94AEF00E7FD28 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE138CB02CF94AEF00E7FD28 /* Base */,
+				CE138D4D2CF94D6C00E7FD28 /* ru */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CE138D4E2CF94D7A00E7FD28 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE138D4F2CF94D7A00E7FD28 /* en */,
+				CE138D512CF94D8000E7FD28 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE138CA42CF946E900E7FD28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VJW59HMWYR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kometa3/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Kometa3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE138CA52CF946E900E7FD28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VJW59HMWYR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kometa3/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Kometa3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE138CA62CF946E900E7FD28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE138CA72CF946E900E7FD28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE138C8B2CF946E700E7FD28 /* Build configuration list for PBXProject "Kometa3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE138CA62CF946E900E7FD28 /* Debug */,
+				CE138CA72CF946E900E7FD28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE138CA32CF946E900E7FD28 /* Build configuration list for PBXNativeTarget "Kometa3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE138CA42CF946E900E7FD28 /* Debug */,
+				CE138CA52CF946E900E7FD28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE138CA82CF9475300E7FD28 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE138D4B2CF94C7D00E7FD28 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE138CA82CF9475300E7FD28 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CE138C882CF946E700E7FD28 /* Project object */;
+}

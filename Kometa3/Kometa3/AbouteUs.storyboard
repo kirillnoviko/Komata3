@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="iPad13_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="REM-Black.ttf">
+            <string>REM-Black</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Aboute Us View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AbouteUs" id="Y6W-OH-hqX" customClass="AbouteUsViewController" customModule="KometaWheel2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="1032" height="1376"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCa-st-r0l">
+                                <rect key="frame" x="0.0" y="24" width="1032" height="1332"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_background" translatesAutoresizingMaskIntoConstraints="NO" id="RBC-Ii-kmx">
+                                        <rect key="frame" x="309.5" y="40" width="413" height="413"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="RBC-Ii-kmx" secondAttribute="height" multiplier="1:1" id="ixM-ui-Xz0"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPC-XC-Q17">
+                                        <rect key="frame" x="166.5" y="1151" width="699" height="161"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="kPC-XC-Q17" secondAttribute="height" multiplier="291:67" id="WFN-av-xVE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="REM-Black" family="REM" pointSize="28"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="ALLOW" backgroundImage="background_button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tappedBack:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="OqC-Nz-4Fn"/>
+                                        </connections>
+                                    </button>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kCp-aE-bBw">
+                                        <rect key="frame" x="129" y="461" width="774" height="682"/>
+                                        <color key="backgroundColor" red="0.99166666670000003" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tJD-W9-j4z">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yAB-rK-jd0">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Nlw-qL-8Ai">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kPC-XC-Q17" firstAttribute="centerX" secondItem="MCa-st-r0l" secondAttribute="centerX" id="0O8-xC-AgQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="kPC-XC-Q17" secondAttribute="bottom" constant="20" symbolic="YES" id="7Wx-HW-mJs"/>
+                                    <constraint firstItem="kCp-aE-bBw" firstAttribute="width" secondItem="MCa-st-r0l" secondAttribute="width" multiplier="0.75" id="E3t-aT-4Nk"/>
+                                    <constraint firstItem="kPC-XC-Q17" firstAttribute="top" secondItem="kCp-aE-bBw" secondAttribute="bottom" constant="8" id="E3t-qw-SIP"/>
+                                    <constraint firstItem="RBC-Ii-kmx" firstAttribute="centerX" secondItem="MCa-st-r0l" secondAttribute="centerX" id="Hp4-4K-Adn"/>
+                                    <constraint firstItem="kPC-XC-Q17" firstAttribute="width" secondItem="MCa-st-r0l" secondAttribute="width" multiplier="0.676845" id="L9V-Bc-S4p"/>
+                                    <constraint firstItem="RBC-Ii-kmx" firstAttribute="top" secondItem="MCa-st-r0l" secondAttribute="top" constant="40" id="U4Y-D8-uGH"/>
+                                    <constraint firstItem="kCp-aE-bBw" firstAttribute="centerX" secondItem="MCa-st-r0l" secondAttribute="centerX" id="iEZ-ba-jSP"/>
+                                    <constraint firstItem="RBC-Ii-kmx" firstAttribute="width" secondItem="MCa-st-r0l" secondAttribute="width" multiplier="0.4" id="itZ-fQ-Q4a"/>
+                                    <constraint firstItem="kCp-aE-bBw" firstAttribute="top" secondItem="RBC-Ii-kmx" secondAttribute="bottom" constant="8" symbolic="YES" id="laY-bf-JAV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.041694778449999997" green="0.054121629599999999" blue="0.2353091836" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="MCa-st-r0l" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="DQm-ma-0CY"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="MCa-st-r0l" secondAttribute="bottom" id="FoN-aq-u7R"/>
+                            <constraint firstAttribute="trailing" secondItem="MCa-st-r0l" secondAttribute="trailing" id="cpO-7i-qC3"/>
+                            <constraint firstItem="MCa-st-r0l" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="i38-bZ-Hwa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="b" destination="FoN-aq-u7R" id="SbU-mf-htN"/>
+                        <outlet property="buttonBack" destination="kPC-XC-Q17" id="Bkq-uC-QfX"/>
+                        <outlet property="collectionView" destination="kCp-aE-bBw" id="a8U-hM-iEa"/>
+                        <outlet property="l" destination="i38-bZ-Hwa" id="GZ9-50-RUm"/>
+                        <outlet property="r" destination="cpO-7i-qC3" id="DUh-Oa-8W6"/>
+                        <outlet property="t" destination="DQm-ma-0CY" id="uIC-Kc-Rhh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.13953488372093" y="-2.5751072961373391"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background_button" width="182" height="67"/>
+        <image name="logo_background" width="379" height="404"/>
+    </resources>
+</document>

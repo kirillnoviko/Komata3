@@ -1,0 +1,145 @@
+"welcome_text" = "Welcome!";
+"title_text" = "Second Screen";
+
+"labelTitlePagePrivacy" = "Privacy Policy and Rules";
+"titlePageSelectService" = "SELECT A SERVICE";
+"button1" = "ABOUT US";
+"button2" = "LEAVE A REQUEST";
+"button3" = "LOYALTY CARD";
+"button4" = "SETTINGS";
+"button5" = "MINI GAME";
+
+"titlePageSubmit" = "SUBMIT REQUEST";
+"buttonAboutePage1Title" = "ABOUT US";
+"buttonAboutePage1TextView" = "We believe that car repairs shouldn’t be a hassle, and that’s why we offer a comfortable relaxation zone while your vehicle is being serviced.   Enjoy our space equipped with free coffee, a PS5 Pro for gaming, a large-screen TV, and a mini-bar. Make the most of your time with us as you wait in comfort.    
+📍 Location: Katukova st., 51, Lipetsk, Lipetsk region, 398036";
+
+"buttonAboutePage2Title" = "OUR BENEFITS";
+"buttonAboutePage2TextView" = "Electrical Systems Comprehensive diagnostics and repair of your vehicle's electrical components. 
+Tire Service Professional tire mounting, balancing, and seasonal tire changes.  Engine Repair Complete engine diagnostics, maintenance, and repair services. 
+Transmission Repair Expert maintenance and repair of manual and automatic transmissions. 
+Air Conditioning Systems Inspection, repair, and refilling of car air conditioning systems. 
+Body Repair High-quality bodywork, including dent removal, painting, and restoration. 
+Exhaust System Exhaust diagnostics, repair, and replacement to ensure optimal performance.";
+
+"buttonAboutePage3Title" = "OUR BENEFITS";
+"buttonAboutePage3TextView" = "The specialists  have extensive experience in repairing and servicing both domestic and imported vehicles. We perform maintenance on any car brand, strictly following the manufacturer’s standards. 
+You can always order a preventive maintenance package from us, which will help ensure the maximum reliability and safety of your vehicle in daily use.";
+
+"buttonAboutePage4Title" = "STOCK";
+"buttonAboutePage4TextView" = "Free Vehicle Fault Diagnostics  
+At our service, inspection of your vehicle is ALWAYS FREE if you are one of our loyal customers.     Our commitment is to provide reliable service and help you keep your car in top condition.";
+
+
+
+"buttonBackTitle" = "BACK TO MENU";
+"buttonNext" = "NEXT";
+"buttonBack" = "BACK";
+"buttonAllowPrivacy" = "ALLOW";
+
+
+"GalleryButton" = "QR CODE";
+"QRCodeTitleButton" = "GALLERY";
+
+"titlePageRequestMyNotes" = "MY REQUESTS";
+
+"labelForCellService" = "Service:";
+"labelForCellDate" = "personal details:";
+
+"leaveARequestButton" = "LEAVE A REQUEST";
+"leaveARequestStoryboard" = "RequestSelectService";
+"myRequestButton" = "MY REQUESTS";
+"myRequestStoryboard" = "MyRequests";
+
+
+"buttonSelectServicePageTitle1" = "ELECTRICAL SYSTEMS";
+"buttonSelectServicePageTitle2" = "TIRE SERVICE";
+"buttonSelectServicePageTitle3" = "ENGINE REPAIR";
+"buttonSelectServicePageTitle4" = "TRANSMISION REPAIR";
+"buttonSelectServicePageTitle5" = "BODY REPAIR";
+"buttonSelectServicePageTitle6" = "EXHOUST SYSTEM";
+
+
+
+"errorTitle" = "Error";
+"errorSelectDate" = "Please, Select date and time!";
+"okButton" = "ok";
+"cancelButton" = "cancel";
+"buttonSelect" = "select";
+"labelNumberSubmitPage" = "NUMBER";
+"labelDateTimeSubmitPage" = "DATE/TIME";
+"labelCarBrandSubmitPage" = "CAR BRAND";
+"labelYourNameSubmitPage" = "YOUR NAME";
+
+
+"errorInsertTitle" = "fill in the fields";
+
+
+"Thanks" = "Thanks!";
+"feedbacksuccessfully" = "Your feedback has been sent successfully.";
+
+"Change Language!" = "Change Language!";
+"Success change language" = "Success change language" ;
+
+"RUSSIAN" = "RUSSIAN";
+"ENGLISH" = "ENGLISH";
+
+"titleLablePageMinigame" = "WIN 5% DISCOUNT";
+"subtitleLablePageMinigame"  = "TIME:";
+"timerLablePageMinigame"  = "";
+"titleLablePageLose" = "YOU LOSE";
+"buttonRestartTitleStack" = "RESTART";
+"textFinishPage" = "Thank you for your request!  We will contact you shortly.";
+
+
+"titleCardPage" = "LOYALTY CARD";
+"cashbackprocentCardPage" = "1%";
+"discountprocentCardPage" = "1%";
+"myBonusCardPage" = "MY BONUS";
+
+"levelCardPage" = "LEVEL";
+"priceCardPage" = "0$/2500$";
+"baseCardPage" = "BASE";
+"cashbackCardPage" = "CASHBACK";
+"discountCardPage" = "DISCOUNT";
+
+"QRCodePagetStoryboard" = "QRCodePage";
+"GalleryPageStoryboard" = "GalleryPage";
+
+"titleQRPage" = "QR CODE";
+"subtitleQRPage" = "Required for access to Relax-zone";
+
+"titleGalleryPage" = "GALLERY";
+
+"reviewsSettingsButton" = "REVIEWS";
+"leaveReviewsSettingsButton" = "LEAVE A  REVIEW";
+"settingsButton" = "SETTINGS";
+"privacySettingsButton" = "Privacy Policy  and Rules";
+"reviewsSettingsStoryboard" = "SettingsReviews";
+"leaveReviewsSettingsStoryboard" = "SettingsReviewsLeave";
+"settingsStoryboard" = "SettingsDetail";
+"privacySettingsStoryboard" = "OnboardingPrivacy";
+
+
+"buttonLeaveReviewsNextPage" = "LEAVE A REVIEW";
+"titleSettingsReviewsPage" = "REVIEWS";
+"buttonBackTitleStack" = "BACK TO  MENU";
+
+"sendButtun" = "SEND";
+"titlePageReviewsLeave" = "LEAVE A REVIEW";
+
+"labelFeedbackTextViewPageReviewsLeave"= "REVIEWS";
+"labelNameTextfieldPageReviewsLeave" = "YOUR NAME";
+
+"labelLanguageChangePageSettings" = "LANGUAGE";
+"titlePageSettingsChange" = "SETTINGS";
+
+
+"titleLablePageWin" = "YOU WIN";
+"subTitleLablePageWin" = "5% DISCOUNT";
+"codeLablePageWin" = "G3Y8DN14";
+"textLablePageWin" = "Show this code to the manager and get a discount";
+
+
+
+
