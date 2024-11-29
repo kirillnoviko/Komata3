@@ -54,6 +54,15 @@ class  SettingsReviewsViewController: BaseViewControllerMainButton, UICollection
        loadFeedbacks()
     }
     private func loadFeedbacks() {
+        let hasAddedDefaultFeedbacksKey = "hasAddedDefaultFeedbacks"
+        let defaults = UserDefaults.standard
+        
+        // Проверяем, были ли добавлены предустановленные отзывы
+        if !defaults.bool(forKey: hasAddedDefaultFeedbacksKey) {
+            addDefaultFeedbacks()
+            defaults.set(true, forKey: hasAddedDefaultFeedbacksKey) // Устанавливаем флаг, что отзывы были добавлены
+        }
+        
         do {
             let realm = try Realm()
             feedbacks = Array(realm.objects(Feedback.self).sorted(byKeyPath: "createdAt", ascending: false))
@@ -62,6 +71,46 @@ class  SettingsReviewsViewController: BaseViewControllerMainButton, UICollection
             print("Ошибка загрузки отзывов: \(error)")
         }
     }
+
+    private func addDefaultFeedbacks() {
+        let defaultFeedbacks = [
+            Feedback(value: [
+                "name": "Иван Иванов",
+                "feedbackText": "Отличный сервис! Очень доволен работой.",
+                "rating": 5,
+                "createdAt": Date()
+            ]),
+            Feedback(value: [
+                "name": "Мария Петрова",
+                "feedbackText": "Хорошая поддержка и быстрое обслуживание.",
+                "rating": 4,
+                "createdAt": Date()
+            ]),
+            Feedback(value: [
+                "name": "Алексей Сидоров",
+                "feedbackText": "Работа выполнена качественно, но пришлось ждать.",
+                "rating": 3,
+                "createdAt": Date()
+            ]),
+            Feedback(value: [
+                "name": "Елена Смирнова",
+                "feedbackText": "Все супер, спасибо большое!",
+                "rating": 5,
+                "createdAt": Date()
+            ])
+        ]
+
+        do {
+            let realm = try Realm()
+            try realm.write {
+                realm.add(defaultFeedbacks)
+            }
+            print("Предустановленные отзывы добавлены.")
+        } catch {
+            print("Ошибка добавления предустановленных отзывов: \(error)")
+        }
+    }
+
     @IBAction func tappedLeaveReviews(_ sender: Any) {
         let storyboard = UIStoryboard(name: "SettingsReviewsLeave", bundle: nil) // Убедитесь, что имя Storyboard верное
         guard let controller = storyboard.instantiateViewController(withIdentifier: "SettingsReviewsLeave") as? BaseViewControllerMainButton else {

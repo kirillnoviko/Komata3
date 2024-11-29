@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,7 +14,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellMainButtom" id="Mc5-Pt-1ZF" customClass="CellMainButtom" customModule="KometaWheel2" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellMainButtom" id="Mc5-Pt-1ZF" customClass="CellMainButtom" customModule="Kometa3" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="470" height="274"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0fE-UO-f5p">
@@ -24,19 +24,19 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_button_image" translatesAutoresizingMaskIntoConstraints="NO" id="QNh-nP-8hh">
                         <rect key="frame" x="0.0" y="0.0" width="470" height="274"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aOT-Ew-adh">
-                        <rect key="frame" x="15" y="5" width="440" height="264"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aOT-Ew-adh">
+                        <rect key="frame" x="15" y="16" width="440" height="242"/>
                         <fontDescription key="fontDescription" name="REM-Black" family="REM" pointSize="26"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="aOT-Ew-adh" firstAttribute="top" secondItem="0fE-UO-f5p" secondAttribute="top" constant="5" id="7sR-AN-vHj"/>
+                    <constraint firstItem="aOT-Ew-adh" firstAttribute="top" secondItem="0fE-UO-f5p" secondAttribute="top" constant="16" id="7sR-AN-vHj"/>
                     <constraint firstAttribute="trailing" secondItem="QNh-nP-8hh" secondAttribute="trailing" id="P9G-Tb-4oN"/>
                     <constraint firstItem="aOT-Ew-adh" firstAttribute="leading" secondItem="0fE-UO-f5p" secondAttribute="leading" constant="15" id="PVA-TL-WgH"/>
                     <constraint firstItem="QNh-nP-8hh" firstAttribute="centerY" secondItem="0fE-UO-f5p" secondAttribute="centerY" id="T81-36-Lku"/>
-                    <constraint firstAttribute="bottom" secondItem="aOT-Ew-adh" secondAttribute="bottom" constant="5" id="WkN-f7-Oe0"/>
+                    <constraint firstAttribute="bottom" secondItem="aOT-Ew-adh" secondAttribute="bottom" constant="16" id="WkN-f7-Oe0"/>
                     <constraint firstAttribute="trailing" secondItem="aOT-Ew-adh" secondAttribute="trailing" constant="15" id="aDM-Mx-aTq"/>
                     <constraint firstItem="QNh-nP-8hh" firstAttribute="top" secondItem="0fE-UO-f5p" secondAttribute="top" id="cwq-sC-Fse"/>
                     <constraint firstItem="QNh-nP-8hh" firstAttribute="leading" secondItem="0fE-UO-f5p" secondAttribute="leading" id="dsc-y9-5WH"/>

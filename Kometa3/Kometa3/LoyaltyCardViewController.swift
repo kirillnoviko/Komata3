@@ -93,7 +93,7 @@ class LoyaltyCardViewController: BaseViewControllerMainButton, UICollectionViewD
     
     private func setupLabel(_ label: UILabel, text: String? = nil, check: Int? = 0) {
         if check == 1{
-            guard let bounds = label.bounds as CGRect? else { return }
+            guard let bounds = self.view.bounds as CGRect? else { return }
             if let gradientColor = GradientTextHelper.gradientColor(bounds: bounds) {
                 label.textColor = gradientColor
             }
