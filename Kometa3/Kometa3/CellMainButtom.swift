@@ -20,9 +20,9 @@ class CellMainButtom: UICollectionViewCell {
        }
     
     func changeColorDefault() {
-        if let gradientColor = GradientTextHelper.gradientColor(bounds: CGRect(x: 0, y: 0, width: 300, height: 100)) {
+        guard let bounds = label.bounds as CGRect? else { return }
+        if let gradientColor = GradientTextHelper.gradientColor(bounds: bounds) {
             label.textColor = gradientColor
-            
         }
        }
     

@@ -50,8 +50,10 @@ class MiniGameViewController: BaseViewControllerMainButton {
         
         
         backgroundImage.layer.cornerRadius = 25
-        if let gradientColor = GradientTextHelper.gradientColor(bounds: CGRect(x: 0, y: 0, width: 360, height: 100)) {
-            labelTitlePage.textColor = gradientColor
+   
+        guard let bounds = self.view.bounds as CGRect? else { return }
+        if let gradientColor = GradientTextHelper.gradientColor(bounds: bounds) {
+            self.labelTitlePage.textColor = gradientColor
         }
         labelTitlePage.text = NSLocalizedString("titleLablePageMinigame", comment: "Заголовок страницы")
         labelTitlePage.font = UIFont(name: "REM-Black", size: 50)
@@ -71,6 +73,8 @@ class MiniGameViewController: BaseViewControllerMainButton {
         timerLabel.font = UIFont(name: "REM-Black", size: 28)
         timerLabel.adjustsFontSizeToFitWidth = true
         timerLabel.minimumScaleFactor = 0.5
+      
+        guard let bounds = self.view.bounds as CGRect? else { return }
         if let gradientColor = GradientTextHelper.gradientColor(bounds: CGRect(x: 0, y: 0, width: 80, height: 100), startColor: UIColor(hex: "#04607A")!, endColor: UIColor(hex: "#46237F")! ) {
             timerLabel.textColor = gradientColor
         }
@@ -97,7 +101,7 @@ class MiniGameViewController: BaseViewControllerMainButton {
     
     private func setupGame() {
        
-        let images = ["cellGame1", "cellGame2", "cellGame3", "cellGame4", "star", "logo_background_offset"]
+        let images = ["cellGame1", "cellGame2", "cellGame3", "cellGame4", "star", "cellGame5"]
         var deck = images.flatMap { [Card(id: UUID().hashValue, imageName: $0), Card(id: UUID().hashValue, imageName: $0)] }
         deck.shuffle()
         

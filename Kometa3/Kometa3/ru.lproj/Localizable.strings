@@ -7,6 +7,15 @@
 "button3" = "КАРТА ЛОЯЛЬНОСТИ";
 "button4" = "НАСТРОЙКИ";
 "button5" = "МИНИ ИГРА";
+
+
+"confirmDeletionTitle" = "УДАЛЕНИЕ";
+"confirmDeletionMessage" = "
+Вы действительно хотите удалить?";
+
+"deleteButton" = "удалить";
+"errorFillAllFields" = "Заполните все поля";
+
 "titlePageSubmit" = "ОСТАВИТЬ ЗАЯВКУ";
 "titlePageSelectService" = "ВЫБОР УСЛУГИ";
 "buttonAboutePage1Title" = "О НАС";

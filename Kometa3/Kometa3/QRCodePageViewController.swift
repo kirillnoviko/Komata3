@@ -39,18 +39,19 @@ class QRCodePageViewController: BaseViewControllerMainButton {
         buttonBack.titleLabel?.textAlignment = .center
         buttonBack.titleLabel?.font = UIFont(name: "REM-Black", size: 25)
         
-        if let gradientColor = GradientTextHelper.gradientColor(bounds: CGRect(x: 0, y: 0, width: titlePage.frame.width, height: 100)) {
-            titlePage.textColor = gradientColor
-            
+        guard let bounds = self.view.bounds as CGRect? else { return }
+        if let gradientColor = GradientTextHelper.gradientColor(bounds: bounds) {
+            self.titlePage.textColor = gradientColor
         }
+        
         titlePage.text  = NSLocalizedString("titleQRPage", comment: "Не удалось сохранить заказ")
         titlePage.font = UIFont(name: "REM-Black", size: 33)
         titlePage.adjustsFontSizeToFitWidth = true
         titlePage.minimumScaleFactor = 0.5
         
-        if let gradientColor1 = GradientTextHelper.gradientColor(bounds: CGRect(x: 0, y: 0, width: subtitlePage.frame.width, height: 100)) {
-            subtitlePage.textColor = gradientColor1
-            
+        guard let bounds = self.view.bounds as CGRect? else { return }
+        if let gradientColor = GradientTextHelper.gradientColor(bounds: bounds) {
+            self.subtitlePage.textColor = gradientColor
         }
         subtitlePage.text  = NSLocalizedString("subtitleQRPage", comment: "Не удалось сохранить заказ")
         subtitlePage.font = UIFont(name: "REM-Black", size: 23)

@@ -39,9 +39,9 @@ class  SettingsReviewsViewController: BaseViewControllerMainButton, UICollection
         buttonBack.titleLabel?.lineBreakMode = .byWordWrapping // Разрешаем перенос слов
         buttonBack.titleLabel?.numberOfLines = 0
         buttonBack.titleLabel?.textAlignment = .center
-        if let gradientColor = GradientTextHelper.gradientColor(bounds: CGRect(x: 0, y: 0, width: titlePage.frame.width, height: 100)) {
-            titlePage.textColor = gradientColor
-            
+        guard let bounds = self.view.bounds as CGRect? else { return }
+        if let gradientColor = GradientTextHelper.gradientColor(bounds: bounds) {
+            self.titlePage.textColor = gradientColor
         }
         titlePage.text  = NSLocalizedString("titleSettingsReviewsPage", comment: "Не удалось сохранить заказ")
         titlePage.font = UIFont(name: "REM-Black", size: 43)

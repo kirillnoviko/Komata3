@@ -31,9 +31,9 @@ class RequestMyNotesViewController: BaseViewControllerMainButton, UICollectionVi
             l.constant = 0
 
         }
-        if let gradientColor = GradientTextHelper.gradientColor(bounds: CGRect(x: 0, y: 0, width: 400, height: 100)) {
-            titlePage.textColor = gradientColor
-            
+        guard let bounds = self.view.bounds as CGRect? else { return }
+        if let gradientColor = GradientTextHelper.gradientColor(bounds: bounds) {
+            self.titlePage.textColor = gradientColor
         }
         titlePage.text = NSLocalizedString("titlePageRequestMyNotes", comment: "Текст для кнопки назад")
         buttonBack.setTitle(NSLocalizedString("buttonBackTitleStack", comment: "Текст для кнопки назад"), for: .normal)

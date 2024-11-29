@@ -41,9 +41,9 @@ class GalleryPageViewController: BaseViewControllerMainButton {
         buttonBack.titleLabel?.font = UIFont(name: "REM-Black", size: 25)
         
         
-        if let gradientColor = GradientTextHelper.gradientColor(bounds: CGRect(x: 0, y: 0, width: titlePage.frame.width, height: 100)) {
-            titlePage.textColor = gradientColor
-            
+        guard let bounds = self.view.bounds as CGRect? else { return }
+        if let gradientColor = GradientTextHelper.gradientColor(bounds: bounds) {
+            self.titlePage.textColor = gradientColor
         }
         titlePage.text  = NSLocalizedString("titleGalleryPage", comment: "Не удалось сохранить заказ")
         titlePage.font = UIFont(name: "REM-Black", size: 33)
@@ -59,7 +59,7 @@ class GalleryPageViewController: BaseViewControllerMainButton {
         
     
     }
-    
+
 
     @IBAction func tappedBack(_ sender: Any) {
         ParentNavigationController?.popViewController(animated: true)

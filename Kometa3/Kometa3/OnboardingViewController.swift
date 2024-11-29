@@ -43,10 +43,12 @@ class OnboardingViewController:  BaseViewControllerMainButton {
         textViewPrivacy.isEditable = false
         textViewPrivacy.isSelectable = false
      
-          if let gradientColor = GradientTextHelper.gradientColor(bounds: CGRect(x: 0, y: 0, width: 400, height: 100)) {
-              titlePrivacy.textColor = gradientColor
-              
-          }
+       
+        guard let bounds = self.view.bounds as CGRect? else { return }
+        if let gradientColor = GradientTextHelper.gradientColor(bounds: bounds) {
+            self.titlePrivacy.textColor = gradientColor
+        }
+        
         
     }
     

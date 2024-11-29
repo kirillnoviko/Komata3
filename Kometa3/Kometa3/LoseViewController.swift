@@ -48,8 +48,9 @@ class LoseViewController: BaseViewControllerMainButton {
         buttonRestart.titleLabel?.font = UIFont(name: "REM-Black", size: 20)
         
         
-        if let gradientColor = GradientTextHelper.gradientColor(bounds: CGRect(x: 0, y: 0, width: 360, height: 100)) {
-            titlePageWin.textColor = gradientColor
+        guard let bounds = self.view.bounds as CGRect? else { return }
+        if let gradientColor = GradientTextHelper.gradientColor(bounds: bounds) {
+            self.titlePageWin.textColor = gradientColor
         }
         titlePageWin.text = NSLocalizedString("titleLablePageLose", comment: "Заголовок страницы")
         titlePageWin.font = UIFont(name: "REM-Black", size: 63)
@@ -63,6 +64,8 @@ class LoseViewController: BaseViewControllerMainButton {
         
 
     }
+    
+
     @IBAction func tappedRestart(_ sender: Any) {
         ParentNavigationController?.popViewController(animated: true)
     }

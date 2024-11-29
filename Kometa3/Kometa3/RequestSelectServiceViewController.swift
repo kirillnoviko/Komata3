@@ -41,10 +41,11 @@ class RequestSelectServiceViewController: BaseViewControllerMainButton, UICollec
             l.constant = 0
 
         }
-        if let gradientColor = GradientTextHelper.gradientColor(bounds: CGRect(x: 0, y: 0, width: 400, height: 100)) {
-            titlePage.textColor = gradientColor
-            
+        guard let bounds = self.view.bounds as CGRect? else { return }
+        if let gradientColor = GradientTextHelper.gradientColor(bounds: bounds) {
+            self.titlePage.textColor = gradientColor
         }
+
         collectionView.dataSource = self
         collectionView.delegate = self
         titlePage.text = NSLocalizedString("titlePageSelectService", comment: "Текст для кнопки назад")

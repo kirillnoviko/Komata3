@@ -41,34 +41,32 @@ class WinViewController: BaseViewControllerMainButton {
         buttonBack.titleLabel?.textAlignment = .center
         buttonBack.titleLabel?.font = UIFont(name: "REM-Black", size: 20)
         
-        if let gradientColor = GradientTextHelper.gradientColor(bounds: CGRect(x: 0, y: 0, width: 360, height: 100)) {
-            titlePageWin.textColor = gradientColor
+        guard let bounds = self.view.bounds as CGRect? else { return }
+        if let gradientColor = GradientTextHelper.gradientColor(bounds: bounds) {
+            self.titlePageWin.textColor = gradientColor
+            self.subTitlePageWin.textColor = gradientColor
+            self.codePageWin.textColor = gradientColor
+            self.textPageWin.textColor = gradientColor
         }
         titlePageWin.text = NSLocalizedString("titleLablePageWin", comment: "Заголовок страницы")
         titlePageWin.font = UIFont(name: "REM-Black", size: 63)
         titlePageWin.adjustsFontSizeToFitWidth = true
         titlePageWin.minimumScaleFactor = 0.5
         
-        if let gradientColor = GradientTextHelper.gradientColor(bounds: CGRect(x: 0, y: 0, width: 360, height: 100)) {
-            subTitlePageWin.textColor = gradientColor
-        }
+     
         subTitlePageWin.text = NSLocalizedString("subTitleLablePageWin", comment: "Заголовок страницы")
         subTitlePageWin.font = UIFont(name: "REM-Black", size: 48)
         subTitlePageWin.adjustsFontSizeToFitWidth = true
         subTitlePageWin.minimumScaleFactor = 0.5
         
-        if let gradientColor = GradientTextHelper.gradientColor(bounds: CGRect(x: 0, y: 0, width: 360, height: 100)) {
-            codePageWin.textColor = gradientColor
-        }
+       
         codePageWin.text = NSLocalizedString("codeLablePageWin", comment: "Заголовок страницы")
         codePageWin.font = UIFont(name: "REM-Black", size: 53)
         codePageWin.adjustsFontSizeToFitWidth = true
         codePageWin.minimumScaleFactor = 0.5
         
         
-        if let gradientColor = GradientTextHelper.gradientColor(bounds: CGRect(x: 0, y: 0, width: 360, height: 100)) {
-            textPageWin.textColor = gradientColor
-        }
+       
         textPageWin.text = NSLocalizedString("textLablePageWin", comment: "Заголовок страницы")
         textPageWin.font = UIFont(name: "REM-Black", size: 28)
         textPageWin.adjustsFontSizeToFitWidth = true

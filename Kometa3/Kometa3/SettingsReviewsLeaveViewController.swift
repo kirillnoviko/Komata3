@@ -56,9 +56,13 @@ class SettingsReviewsLeaveViewController: BaseViewControllerMainButton, UITextFi
           
     
           setupTapGesture()
-          
+        // Добавляем предустановленные отзывы, если это первый запуск
+       
        
     }
+
+
+    
 
       @objc private func dismissKeyboard() {
           view.endEditing(true)
@@ -77,10 +81,11 @@ class SettingsReviewsLeaveViewController: BaseViewControllerMainButton, UITextFi
         view.endEditing(true) // Скрыть клавиатуру
     }
     private func configureUI() {
-        if let gradientColor = GradientTextHelper.gradientColor(bounds: CGRect(x: 0, y: 0, width: titlePage.frame.width+20, height: 100)) {
-            titlePage.textColor = gradientColor
-            
+        guard let bounds = self.view.bounds as CGRect? else { return }
+        if let gradientColor = GradientTextHelper.gradientColor(bounds: bounds) {
+            self.titlePage.textColor = gradientColor
         }
+        
         titlePage.text = NSLocalizedString("titlePageReviewsLeave", comment: "Placeholder для имени")
         titlePage.font = UIFont(name: "REM-Black", size: 30)
         nameTextField.layer.cornerRadius = 30

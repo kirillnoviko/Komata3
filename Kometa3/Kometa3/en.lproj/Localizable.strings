@@ -9,6 +9,12 @@
 "button4" = "SETTINGS";
 "button5" = "MINI GAME";
 
+"errorFillAllFields" = "Fill in all fields";
+
+"confirmDeletionTitle" = "DELETE";
+"confirmDeletionMessage" = "
+Are you sure you want to delete your order?";
+
 "titlePageSubmit" = "SUBMIT REQUEST";
 "buttonAboutePage1Title" = "ABOUT US";
 "buttonAboutePage1TextView" = "We believe that car repairs shouldn’t be a hassle, and that’s why we offer a comfortable relaxation zone while your vehicle is being serviced.   Enjoy our space equipped with free coffee, a PS5 Pro for gaming, a large-screen TV, and a mini-bar. Make the most of your time with us as you wait in comfort.    
@@ -65,6 +71,8 @@ At our service, inspection of your vehicle is ALWAYS FREE if you are one of our
 "errorSelectDate" = "Please, Select date and time!";
 "okButton" = "ok";
 "cancelButton" = "cancel";
+"deleteButton" = "delete";
+
 "buttonSelect" = "select";
 "labelNumberSubmitPage" = "NUMBER";
 "labelDateTimeSubmitPage" = "DATE/TIME";

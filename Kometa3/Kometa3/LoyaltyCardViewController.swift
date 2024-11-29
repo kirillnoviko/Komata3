@@ -68,7 +68,10 @@ class LoyaltyCardViewController: BaseViewControllerMainButton, UICollectionViewD
         setupLabel(labelDiscount, text: NSLocalizedString("discountCardPage", comment: "Не удалось сохранить заказ"))
         
         titlePage.font = UIFont(name: "REM-Black", size: 23)
-        titlePage.textColor = GradientTextHelper.gradientColor(bounds: CGRect(x: 0, y: 0, width: titlePage.frame.width, height: titlePage.frame.height))
+        guard let bounds = self.view.bounds as CGRect? else { return }
+        if let gradientColor = GradientTextHelper.gradientColor(bounds: bounds) {
+            self.titlePage.textColor = gradientColor
+        }
         labelMyBonus.font = UIFont(name: "REM-Black", size: 28)
         labelLwevel.font = UIFont(name: "REM-Black", size: 24)
         labelBase.font = UIFont(name: "REM-Black", size: 18)
@@ -84,11 +87,15 @@ class LoyaltyCardViewController: BaseViewControllerMainButton, UICollectionViewD
         collectionView.register(nib, forCellWithReuseIdentifier: "CellMainButtom")
     }
     
+    
+
+    
+    
     private func setupLabel(_ label: UILabel, text: String? = nil, check: Int? = 0) {
         if check == 1{
-            if let gradientColor = GradientTextHelper.gradientColor(bounds: CGRect(x: 0, y: 0, width: 200, height: 100)) {
+            guard let bounds = label.bounds as CGRect? else { return }
+            if let gradientColor = GradientTextHelper.gradientColor(bounds: bounds) {
                 label.textColor = gradientColor
-                
             }
         }else{
             label.textColor = .white

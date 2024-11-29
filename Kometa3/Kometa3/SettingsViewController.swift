@@ -1,4 +1,5 @@
 import UIKit
+import RealmSwift
 
 class SettingsViewController: BaseViewControllerMainButton, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
@@ -53,6 +54,54 @@ class SettingsViewController: BaseViewControllerMainButton, UICollectionViewData
         
         let nib = UINib(nibName: "CellMainButton", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: "CellMainButtom")
+        
+        addDefaultFeedbacksIfNeeded()
+    }
+    private func addDefaultFeedbacksIfNeeded() {
+        let hasAddedFeedbacksKey = "hasAddedDefaultFeedbacks"
+        let defaults = UserDefaults.standard
+        
+        if !defaults.bool(forKey: hasAddedFeedbacksKey) {
+            let defaultFeedbacks = [
+                Feedback(value: [
+                    "name": "Иван Жизневский",
+                    "feedbackText": "Отличный сервис! Очень доволен работой.",
+                    "rating": 5,
+                    "createdAt": Date()
+                ]),
+                Feedback(value: [
+                    "name": "Мария Колесникова",
+                    "feedbackText": "Хорошая поддержка и быстрое обслуживание.",
+                    "rating": 4,
+                    "createdAt": Date()
+                ]),
+                Feedback(value: [
+                    "name": "Алексей Сидоров",
+                    "feedbackText": "Работа выполнена качественно, но пришлось ждать.",
+                    "rating": 3,
+                    "createdAt": Date()
+                ]),
+                Feedback(value: [
+                    "name": "Елена Смирнова",
+                    "feedbackText": "Все супер, спасибо большое!",
+                    "rating": 5,
+                    "createdAt": Date()
+                ])
+            ]
+            
+            do {
+                let realm = try Realm()
+                try realm.write {
+                    realm.add(defaultFeedbacks)
+                }
+                print("Предустановленные отзывы добавлены.")
+                
+                // Помечаем, что отзывы были добавлены
+                defaults.set(true, forKey: hasAddedFeedbacksKey)
+            } catch {
+                print("Ошибка добавления предустановленных отзывов: \(error)")
+            }
+        }
     }
     @IBAction func tappedBack(_ sender: Any) {
         ParentNavigationController?.popViewController(animated: true)
