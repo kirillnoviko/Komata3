@@ -15,7 +15,8 @@ class QRCodePageViewController: BaseViewControllerMainButton {
 
     @IBOutlet weak var subtitlePage: UILabel!
     
-    
+    @IBOutlet weak var QRcodeSelect: UIButton!
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         if UIDevice.current.userInterfaceIdiom == .pad {
@@ -31,13 +32,24 @@ class QRCodePageViewController: BaseViewControllerMainButton {
 
         }
         buttonBack.setTitle(NSLocalizedString("buttonBackTitle", comment: "Текст для кнопки назад"), for: .normal )
-   
+        
         buttonBack.layer.cornerRadius = 33
         buttonBack.clipsToBounds = true
         buttonBack.titleLabel?.lineBreakMode = .byWordWrapping
         buttonBack.titleLabel?.numberOfLines = 0
         buttonBack.titleLabel?.textAlignment = .center
         buttonBack.titleLabel?.font = UIFont(name: "REM-Black", size: 25)
+        
+        
+        QRcodeSelect.setTitle(NSLocalizedString("titleQRPage", comment: "Текст для кнопки назад"), for: .normal )
+        
+        QRcodeSelect.layer.cornerRadius = 33
+        QRcodeSelect.clipsToBounds = true
+        QRcodeSelect.titleLabel?.lineBreakMode = .byWordWrapping
+        QRcodeSelect.titleLabel?.numberOfLines = 0
+        QRcodeSelect.titleLabel?.textAlignment = .center
+        QRcodeSelect.titleLabel?.font = UIFont(name: "REM-Black", size: 20)
+        
         
         guard let bounds = self.view.bounds as CGRect? else { return }
         if let gradientColor = GradientTextHelper.gradientColor(bounds: bounds) {
@@ -66,7 +78,13 @@ class QRCodePageViewController: BaseViewControllerMainButton {
     
     }
     
-
+ 
+    @IBAction func tappedSelect(_ sender: Any) {
+        let scannerViewController = ScannerViewController()
+                scannerViewController.modalPresentationStyle = .fullScreen
+                present(scannerViewController, animated: true)
+    }
+    
     @IBAction func tappedBack(_ sender: Any) {
         ParentNavigationController?.popViewController(animated: true)
     }

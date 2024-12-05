@@ -158,3 +158,10 @@
 "codeLablePageWin" = "G3Y8DN14";
 "textLablePageWin" = "Покажите этот код менеджеру и получите скидку";
 
+"titleAllertSetting" = "Доступ к камере запрещен";
+"settingAllertSetting" = "Чтобы сканировать QR-коды, перейдите в настройки приложения и разрешите доступ к камере.";
+"settingSetting" = "Настройки";
+"cancelAlert" = "Отмена";
+"backAlert" = "Назад";
+"QRCodeSucces" = "Доступ предоставлен";
+"QRCodeError" = "QR-коде не найден";

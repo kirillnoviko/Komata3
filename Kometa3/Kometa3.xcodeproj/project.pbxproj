@@ -20,7 +20,6 @@
 		CE138CD62CF94B3D00E7FD28 /* RequestSelectService.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CCA2CF94B3D00E7FD28 /* RequestSelectService.storyboard */; };
 		CE138CD72CF94B3D00E7FD28 /* LoyaltyCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CC32CF94B3D00E7FD28 /* LoyaltyCard.storyboard */; };
 		CE138CD82CF94B3D00E7FD28 /* WinPages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CD02CF94B3D00E7FD28 /* WinPages.storyboard */; };
-		CE138CD92CF94B3D00E7FD28 /* QRCodePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CC82CF94B3D00E7FD28 /* QRCodePage.storyboard */; };
 		CE138CDA2CF94B3D00E7FD28 /* SettingsReviewsLeave.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CCF2CF94B3D00E7FD28 /* SettingsReviewsLeave.storyboard */; };
 		CE138CDB2CF94B3D00E7FD28 /* LeaveARequest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CC12CF94B3D00E7FD28 /* LeaveARequest.storyboard */; };
 		CE138CDC2CF94B3D00E7FD28 /* MainWindow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138CC42CF94B3D00E7FD28 /* MainWindow.storyboard */; };
@@ -84,6 +83,8 @@
 		CE138D4C2CF94C7D00E7FD28 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE138D4B2CF94C7D00E7FD28 /* RealmSwift */; };
 		CE138D502CF94D7A00E7FD28 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE138D4E2CF94D7A00E7FD28 /* Localizable.strings */; };
 		CE138D522CF9FA7200E7FD28 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = CE138D4B2CF94C7D00E7FD28 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CE138D572D01F15B00E7FD28 /* scannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE138D562D01F15B00E7FD28 /* scannerViewController.swift */; };
+		CE138D592D0206F700E7FD28 /* QRCodePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE138D582D0206F700E7FD28 /* QRCodePage.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -118,7 +119,6 @@
 		CE138CC52CF94B3D00E7FD28 /* MiniGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MiniGame.storyboard; sourceTree = "<group>"; };
 		CE138CC62CF94B3D00E7FD28 /* MyRequests.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyRequests.storyboard; sourceTree = "<group>"; };
 		CE138CC72CF94B3D00E7FD28 /* OnboardingPrivacy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnboardingPrivacy.storyboard; sourceTree = "<group>"; };
-		CE138CC82CF94B3D00E7FD28 /* QRCodePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRCodePage.storyboard; sourceTree = "<group>"; };
 		CE138CC92CF94B3D00E7FD28 /* RequestFinishSubmit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RequestFinishSubmit.storyboard; sourceTree = "<group>"; };
 		CE138CCA2CF94B3D00E7FD28 /* RequestSelectService.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RequestSelectService.storyboard; sourceTree = "<group>"; };
 		CE138CCB2CF94B3D00E7FD28 /* RequestSubmit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RequestSubmit.storyboard; sourceTree = "<group>"; };
@@ -180,6 +180,8 @@
 		CE138D4D2CF94D6C00E7FD28 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		CE138D4F2CF94D7A00E7FD28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CE138D512CF94D8000E7FD28 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE138D562D01F15B00E7FD28 /* scannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scannerViewController.swift; sourceTree = "<group>"; };
+		CE138D582D0206F700E7FD28 /* QRCodePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QRCodePage.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 		CE138CB62CF94AEF00E7FD28 /* Kometa3 */ = {
 			isa = PBXGroup;
 			children = (
+				CE138D582D0206F700E7FD28 /* QRCodePage.storyboard */,
 				CE138D1A2CF94BA600E7FD28 /* Card.swift */,
 				CE138D2B2CF94BA600E7FD28 /* Fonts */,
 				CE138D2C2CF94BA600E7FD28 /* GradientBackgroundHelper.swift */,
@@ -260,7 +263,6 @@
 				CE138CC52CF94B3D00E7FD28 /* MiniGame.storyboard */,
 				CE138CC62CF94B3D00E7FD28 /* MyRequests.storyboard */,
 				CE138CC72CF94B3D00E7FD28 /* OnboardingPrivacy.storyboard */,
-				CE138CC82CF94B3D00E7FD28 /* QRCodePage.storyboard */,
 				CE138CC92CF94B3D00E7FD28 /* RequestFinishSubmit.storyboard */,
 				CE138CCA2CF94B3D00E7FD28 /* RequestSelectService.storyboard */,
 				CE138CCB2CF94B3D00E7FD28 /* RequestSubmit.storyboard */,
@@ -276,6 +278,7 @@
 				CE138CB42CF94AEF00E7FD28 /* SceneDelegate.swift */,
 				CE138CB52CF94AEF00E7FD28 /* ViewController.swift */,
 				CE138D4E2CF94D7A00E7FD28 /* Localizable.strings */,
+				CE138D562D01F15B00E7FD28 /* scannerViewController.swift */,
 			);
 			path = Kometa3;
 			sourceTree = "<group>";
@@ -395,9 +398,9 @@
 				CE138CD62CF94B3D00E7FD28 /* RequestSelectService.storyboard in Resources */,
 				CE138CD72CF94B3D00E7FD28 /* LoyaltyCard.storyboard in Resources */,
 				CE138CD82CF94B3D00E7FD28 /* WinPages.storyboard in Resources */,
-				CE138CD92CF94B3D00E7FD28 /* QRCodePage.storyboard in Resources */,
 				CE138CDA2CF94B3D00E7FD28 /* SettingsReviewsLeave.storyboard in Resources */,
 				CE138CDB2CF94B3D00E7FD28 /* LeaveARequest.storyboard in Resources */,
+				CE138D592D0206F700E7FD28 /* QRCodePage.storyboard in Resources */,
 				CE138CDC2CF94B3D00E7FD28 /* MainWindow.storyboard in Resources */,
 				CE138CDD2CF94B3D00E7FD28 /* MiniGame.storyboard in Resources */,
 				CE138CDE2CF94B3D00E7FD28 /* MyRequests.storyboard in Resources */,
@@ -445,6 +448,7 @@
 				CE138D0E2CF94B8A00E7FD28 /* RequestSubmitViewController.swift in Sources */,
 				CE138D0F2CF94B8A00E7FD28 /* LoyaltyCardViewController.swift in Sources */,
 				CE138D102CF94B8A00E7FD28 /* MiniGameViewController.swift in Sources */,
+				CE138D572D01F15B00E7FD28 /* scannerViewController.swift in Sources */,
 				CE138D112CF94B8A00E7FD28 /* LeaveARequestViewController.swift in Sources */,
 				CE138D122CF94B8A00E7FD28 /* AbouteUsDetailViewController.swift in Sources */,
 				CE138D422CF94BA600E7FD28 /* Order.swift in Sources */,

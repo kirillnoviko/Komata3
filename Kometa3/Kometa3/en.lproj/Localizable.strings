@@ -151,3 +151,10 @@ At our service, inspection of your vehicle is ALWAYS FREE if you are one of our
 
 
 
+"titleAllertSetting" = "Access to the camera is prohibited";
+"settingAllertSetting" = "To scan QR codes, go to the app settings and allow access to the camera.";
+"settingSetting" = "Settings";
+"cancelAlert" = "Cancel";
+"backAlert" = "Back";
+"QRCodeSucces" = "Access granted";
+"QRCodeError" = "The QR code was not found";
